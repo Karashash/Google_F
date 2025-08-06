@@ -16,6 +16,6 @@ http://localhost:8501
 docker run -p 8501:8501 \
   -v "$(pwd)/gt-key.json:/gcp/key.json:ro" \
   -e GOOGLE_APPLICATION_CREDENTIALS=/gcp/key.json \
-  -e GCP_PROJECT=translator-467314 \
+  -e GCP_PROJECT=<project-id> \
   docx-translator
 ```
